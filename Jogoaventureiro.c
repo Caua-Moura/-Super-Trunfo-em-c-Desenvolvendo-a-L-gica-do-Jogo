@@ -122,7 +122,7 @@ int main () {
             }
         break;
         case 3:
-            if(aKm² > aKm2_2){
+            if(aKm2 > aKm2_2){
                 printf("A área de %s é maior que a área de %s\n", cidade, cidade2);
             } else {
                 printf("A área de %s é maior que a área de %s\n", cidade2, cidade);
