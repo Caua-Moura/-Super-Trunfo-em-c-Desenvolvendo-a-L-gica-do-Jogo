@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 
 int main () {
 
-    char nome[40], estado[40], cidade[40], codigocarta[40];
-    char nome2[40], estado2[40], cidade2[40], codigocarta2[40];
+    char estado[40], cidade[40], codigocarta[40];
+    char estado2[40], cidade2[40], codigocarta2[40];
     int populacao, pontosTuristicos;
     int populacao2, pontosTuristicos2;
-    float aKm², pib;
-    float aKm²_2, pib_2;
+    float aKm2, pib;
+    float aKm2_2, pib_2;
     float dp, dp2;
     float pibc, pibc2;
 
@@ -30,7 +31,7 @@ int main () {
     getchar(); 
 
     printf("Digite a área em Km²: ");
-    scanf("%f", &aKm²);
+    scanf("%f", &aKm2);
     getchar();
 
     printf("Digite o PIB: ");
@@ -60,7 +61,7 @@ int main () {
     getchar();
 
     printf("Digite a área em Km²: ");
-    scanf("%f", &aKm²_2);
+    scanf("%f", &aKm2_2);
     getchar();
 
     printf("Digite o PIB: ");
@@ -71,8 +72,8 @@ int main () {
     scanf("%d", &pontosTuristicos2);
     getchar();
 
-    dp = populacao / aKm²;
-    dp2 = populacao2 / aKm²_2;
+    dp = populacao / aKm2;
+    dp2 = populacao2 / aKm2_2;
     pibc = pib / populacao;
     pibc2 = pib_2 / populacao2;
 
@@ -82,7 +83,7 @@ int main () {
     printf("Código: %s \n", codigocarta);
     printf("Nome da cidade: %s \n", cidade);
     printf("População: %d \n", populacao);
-    printf("Área em Km²: %.2f \n", aKm²);
+    printf("Área em Km²: %.2f \n", aKm2);
     printf("PIB: %.2f \n", pib);
     printf("Número de pontos turísticos: %d \n", pontosTuristicos);
     printf("Densidade populacional: %.2f \n", dp);
@@ -93,7 +94,7 @@ int main () {
     printf("Código: %s \n", codigocarta2);
     printf("Nome da cidade: %s \n", cidade2);
     printf("População: %d \n", populacao2);
-    printf("Área em Km²: %.2f \n", aKm²_2);
+    printf("Área em Km²: %.2f \n", aKm2_2);
     printf("PIB: %.2f \n", pib_2);
     printf("Número de pontos turísticos: %d \n", pontosTuristicos2);
     printf("Densidade populacional: %.2f \n", dp2);
@@ -121,7 +122,7 @@ int main () {
             }
         break;
         case 3:
-            if(aKm² > aKm²_2){
+            if(aKm² > aKm2_2){
                 printf("A área de %s é maior que a área de %s\n", cidade, cidade2);
             } else {
                 printf("A área de %s é maior que a área de %s\n", cidade2, cidade);
